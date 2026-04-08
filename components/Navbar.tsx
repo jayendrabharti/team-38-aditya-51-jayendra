@@ -21,7 +21,7 @@ export default function Navbar() {
           href="/"
           className="text-lg font-bold tracking-tight text-zinc-900 dark:text-zinc-50"
         >
-          Team&nbsp;38
+          Team&nbsp;38-51
         </Link>
 
         {/* Desktop links */}
