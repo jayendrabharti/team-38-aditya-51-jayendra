@@ -28,9 +28,15 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-screen flex flex-col">
         <Navbar />
-        {children}
+        <main className="flex-1">{children}</main>
+        <footer className="w-full border-t border-zinc-200 bg-white/80 dark:border-zinc-800 dark:bg-black/80">
+          <div className="mx-auto flex h-14 w-full max-w-5xl items-center justify-between px-6 text-sm text-zinc-600 dark:text-zinc-400">
+            <p>&copy; {new Date().getFullYear()} Team 38-51</p>
+            <p>Built with Next.js</p>
+          </div>
+        </footer>
       </body>
     </html>
   );
